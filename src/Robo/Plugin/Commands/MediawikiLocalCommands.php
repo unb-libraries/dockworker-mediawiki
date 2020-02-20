@@ -15,7 +15,9 @@ class MediawikiLocalCommands extends DockworkerLocalCommands {
    * @hook on-event dockworker-local-log-error-exceptions
    */
   public function getErrorLogExceptions() {
-    return [];
+    return [
+      '0 error(s)' => 'Zero errors means no errors',
+    ];
   }
 
 }
